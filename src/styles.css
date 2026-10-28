@@ -1,0 +1,93 @@
+/* Вид сетки берётся у темы (--mantine-*), положение — из чисел модуля
+   раскладки src/layout.ts, которые приходят сюда переменными --cell-size,
+   --column-gap и --row-gap. */
+
+.tree__grid {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--row-gap);
+}
+
+.tree__row {
+  display: grid;
+  grid-template-columns: repeat(var(--columns), var(--cell-size));
+  column-gap: var(--column-gap);
+  height: var(--cell-size);
+}
+
+.talent {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: var(--cell-size);
+  height: var(--cell-size);
+  padding: var(--mantine-spacing-xs);
+  font: inherit;
+  font-size: var(--mantine-font-size-xs);
+  line-height: 1.2;
+  text-align: left;
+  cursor: pointer;
+  color: var(--mantine-color-text);
+  border: 2px solid var(--mantine-color-indigo-5);
+  border-radius: var(--mantine-radius-md);
+  background: var(--mantine-color-indigo-0);
+}
+
+.talent:disabled {
+  cursor: default;
+}
+
+.talent[data-state="locked"] {
+  color: var(--mantine-color-dimmed);
+  border-style: dashed;
+  border-color: var(--mantine-color-gray-5);
+  background: var(--mantine-color-gray-1);
+}
+
+.talent[data-state="maxed"] {
+  border-color: var(--mantine-color-yellow-7);
+  background: var(--mantine-color-yellow-1);
+}
+
+.talent__name {
+  overflow-wrap: anywhere;
+  font-weight: 600;
+}
+
+.talent__rank {
+  align-self: flex-end;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+
+/* Слой связей лежит поверх клеток и пропускает щелчки насквозь. */
+.tree__links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.tree__link {
+  stroke: var(--mantine-color-indigo-7);
+  stroke-width: 2;
+}
+
+.tree__arrow-head {
+  fill: var(--mantine-color-indigo-7);
+}
+
+.tree__boundary line {
+  stroke: var(--mantine-color-gray-5);
+  stroke-dasharray: 4 4;
+}
+
+.tree__boundary text {
+  fill: var(--mantine-color-dimmed);
+  font-size: 10px;
+}

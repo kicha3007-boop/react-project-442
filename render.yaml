@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: talent-calculator
+    runtime: static
+    buildCommand: make setup && make build
+    staticPublishPath: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
