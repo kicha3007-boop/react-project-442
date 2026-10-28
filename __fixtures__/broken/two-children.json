@@ -1,0 +1,17 @@
+{
+  "name": "Развилка",
+  "budget": 5,
+  "pointsPerRow": 5,
+  "columns": 3,
+  "trees": [
+    {
+      "id": "fork",
+      "name": "Развилка",
+      "talents": [
+        { "id": "root", "name": "Корень", "row": 0, "col": 0, "maxRank": 1, "text": "Из него растут оба." },
+        { "id": "left", "name": "Левый", "row": 0, "col": 1, "maxRank": 1, "requires": "root", "text": "Держится на корне." },
+        { "id": "right", "name": "Правый", "row": 1, "col": 0, "maxRank": 1, "requires": "root", "text": "Тоже держится на корне." }
+      ]
+    }
+  ]
+}

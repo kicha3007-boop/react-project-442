@@ -1,0 +1,15 @@
+{
+  "name": "Опора в никуда",
+  "budget": 5,
+  "pointsPerRow": 5,
+  "columns": 2,
+  "trees": [
+    {
+      "id": "void",
+      "name": "Пустота",
+      "talents": [
+        { "id": "hook", "name": "Крюк", "row": 0, "col": 0, "maxRank": 2, "requires": "ghost", "text": "Держится на таланте, которого в классе нет." }
+      ]
+    }
+  ]
+}

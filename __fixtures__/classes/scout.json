@@ -1,0 +1,48 @@
+{
+  "name": "Следопыт",
+  "budget": 8,
+  "pointsPerRow": 5,
+  "columns": 3,
+  "trees": [
+    {
+      "id": "bow",
+      "name": "Лук",
+      "talents": [
+        { "id": "keeneye", "name": "Меткий глаз", "row": 0, "col": 0, "maxRank": 3, "text": "Дальность выстрела больше на 3 м за ранг." },
+        { "id": "steady", "name": "Твёрдая рука", "row": 0, "col": 1, "maxRank": 2, "requires": "keeneye", "text": "Выстрел не сбивается уроном с шансом 25% за ранг." },
+        { "id": "volley", "name": "Залп", "row": 1, "col": 0, "maxRank": 2, "text": "Три стрелы разом по конусу перед собой." },
+        { "id": "piercing", "name": "Бронебой", "row": 1, "col": 1, "maxRank": 1, "requires": "steady", "text": "Стрела не замечает половину брони цели." }
+      ]
+    },
+    {
+      "id": "beast",
+      "name": "Зверь",
+      "talents": [
+        { "id": "bond", "name": "Связь", "row": 0, "col": 0, "maxRank": 3, "text": "Питомец получает 5% вашего здоровья за ранг." },
+        { "id": "feral", "name": "Дикость", "row": 0, "col": 1, "maxRank": 2, "requires": "bond", "text": "Урон питомца выше на 8% за ранг." },
+        { "id": "maul", "name": "Терзание", "row": 1, "col": 1, "maxRank": 1, "requires": "feral", "text": "Питомец рвёт цель, снимая с неё лечение на 6 сек." },
+        { "id": "pack", "name": "Стая", "row": 1, "col": 0, "maxRank": 2, "text": "Второй питомец выходит на 20 сек. раз в минуту." }
+      ]
+    },
+    {
+      "id": "trail",
+      "name": "Тропа",
+      "talents": [
+        { "id": "tracks", "name": "Следы", "row": 0, "col": 0, "maxRank": 3, "text": "Видно следы цели ещё 10 сек. за ранг." },
+        { "id": "camo", "name": "Маскировка", "row": 0, "col": 1, "maxRank": 2, "requires": "tracks", "text": "Вас не замечают на 3 м ближе за ранг." },
+        { "id": "trap", "name": "Капкан", "row": 1, "col": 0, "maxRank": 2, "text": "Капкан держит зверя 8 сек." },
+        { "id": "sprint", "name": "Рывок", "row": 1, "col": 1, "maxRank": 1, "requires": "camo", "text": "Скорость выше вдвое на 5 сек. после выхода из маскировки." }
+      ]
+    },
+    {
+      "id": "venom",
+      "name": "Яд",
+      "talents": [
+        { "id": "poison", "name": "Яд", "row": 0, "col": 0, "maxRank": 3, "text": "Стрела оставляет яд, 4 урона в секунду за ранг." },
+        { "id": "corrode", "name": "Разъедание", "row": 0, "col": 1, "maxRank": 2, "requires": "poison", "text": "Яд снимает с цели 5% брони за ранг." },
+        { "id": "toxin", "name": "Токсин", "row": 1, "col": 1, "maxRank": 2, "requires": "corrode", "text": "Яд переходит на соседнюю цель при смерти носителя." },
+        { "id": "numb", "name": "Онемение", "row": 1, "col": 2, "maxRank": 1, "text": "Отравленная цель бьёт на 15% медленнее." }
+      ]
+    }
+  ]
+}

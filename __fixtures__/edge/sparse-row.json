@@ -1,0 +1,17 @@
+{
+  "name": "Страж",
+  "budget": 12,
+  "pointsPerRow": 5,
+  "columns": 4,
+  "trees": [
+    {
+      "id": "guard",
+      "name": "Стража",
+      "talents": [
+        { "id": "shield", "name": "Щит", "row": 0, "col": 0, "maxRank": 5, "text": "Блок держит на 2% больше урона за ранг." },
+        { "id": "taunt", "name": "Вызов", "row": 0, "col": 1, "maxRank": 2, "text": "Вызов держит цель на 1 сек. дольше за ранг." },
+        { "id": "bulwark", "name": "Оплот", "row": 1, "col": 3, "maxRank": 2, "text": "Стоя на месте, вы получаете на 5% меньше урона за ранг." }
+      ]
+    }
+  ]
+}

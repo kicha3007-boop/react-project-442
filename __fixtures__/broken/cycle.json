@@ -1,0 +1,16 @@
+{
+  "name": "Замкнутый круг",
+  "budget": 5,
+  "pointsPerRow": 5,
+  "columns": 2,
+  "trees": [
+    {
+      "id": "loop",
+      "name": "Петля",
+      "talents": [
+        { "id": "first", "name": "Первый", "row": 0, "col": 0, "maxRank": 2, "requires": "second", "text": "Держится на втором." },
+        { "id": "second", "name": "Второй", "row": 0, "col": 1, "maxRank": 2, "requires": "first", "text": "Держится на первом." }
+      ]
+    }
+  ]
+}

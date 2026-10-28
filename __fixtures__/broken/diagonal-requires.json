@@ -1,0 +1,16 @@
+{
+  "name": "Косая связь",
+  "budget": 5,
+  "pointsPerRow": 5,
+  "columns": 3,
+  "trees": [
+    {
+      "id": "slant",
+      "name": "Косина",
+      "talents": [
+        { "id": "anchor", "name": "Якорь", "row": 0, "col": 0, "maxRank": 1, "text": "Держит цепь на месте." },
+        { "id": "drift", "name": "Снос", "row": 1, "col": 2, "maxRank": 1, "requires": "anchor", "text": "Уводит цель вбок." }
+      ]
+    }
+  ]
+}

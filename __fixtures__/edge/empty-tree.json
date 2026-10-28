@@ -1,0 +1,20 @@
+{
+  "name": "Послушник",
+  "budget": 5,
+  "pointsPerRow": 5,
+  "columns": 2,
+  "trees": [
+    {
+      "id": "light",
+      "name": "Свет",
+      "talents": [
+        { "id": "spark", "name": "Искра", "row": 0, "col": 0, "maxRank": 3, "text": "Искра света жжёт нежить, 3 урона за ранг." }
+      ]
+    },
+    {
+      "id": "shadow",
+      "name": "Тень",
+      "talents": []
+    }
+  ]
+}

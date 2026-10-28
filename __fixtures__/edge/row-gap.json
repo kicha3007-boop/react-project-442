@@ -1,0 +1,17 @@
+{
+  "name": "Отшельник",
+  "budget": 20,
+  "pointsPerRow": 5,
+  "columns": 2,
+  "trees": [
+    {
+      "id": "path",
+      "name": "Путь",
+      "talents": [
+        { "id": "step", "name": "Шаг", "row": 0, "col": 0, "maxRank": 5, "text": "Скорость выше на 2% за ранг." },
+        { "id": "breath", "name": "Дыхание", "row": 0, "col": 1, "maxRank": 5, "text": "Выносливость восстанавливается на 4% быстрее за ранг." },
+        { "id": "summit", "name": "Вершина", "row": 2, "col": 0, "maxRank": 1, "text": "Падение с любой высоты не наносит урона." }
+      ]
+    }
+  ]
+}

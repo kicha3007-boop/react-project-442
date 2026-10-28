@@ -1,0 +1,15 @@
+{
+  "name": "Ученик",
+  "budget": 3,
+  "pointsPerRow": 5,
+  "columns": 1,
+  "trees": [
+    {
+      "id": "basics",
+      "name": "Основы",
+      "talents": [
+        { "id": "grip", "name": "Хват", "row": 0, "col": 0, "maxRank": 3, "text": "Оружие не выбивают из рук с шансом 10% за ранг." }
+      ]
+    }
+  ]
+}

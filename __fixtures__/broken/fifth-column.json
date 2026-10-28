@@ -1,0 +1,15 @@
+{
+  "name": "Пятая колонка",
+  "budget": 5,
+  "pointsPerRow": 5,
+  "columns": 5,
+  "trees": [
+    {
+      "id": "wide",
+      "name": "Широкое",
+      "talents": [
+        { "id": "edge", "name": "Край", "row": 0, "col": 4, "maxRank": 2, "text": "Стоит в пятой колонке." }
+      ]
+    }
+  ]
+}

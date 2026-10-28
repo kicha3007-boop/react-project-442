@@ -1,0 +1,17 @@
+{
+  "name": "Занятая клетка",
+  "budget": 5,
+  "pointsPerRow": 5,
+  "columns": 2,
+  "trees": [
+    {
+      "id": "column",
+      "name": "Колонна",
+      "talents": [
+        { "id": "crown", "name": "Венец", "row": 0, "col": 0, "maxRank": 1, "text": "Держит верх." },
+        { "id": "shaft", "name": "Ствол", "row": 1, "col": 0, "maxRank": 1, "text": "Стоит посередине." },
+        { "id": "footing", "name": "Пята", "row": 2, "col": 0, "maxRank": 1, "requires": "crown", "text": "Держит низ." }
+      ]
+    }
+  ]
+}
